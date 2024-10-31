@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Writing a Bash script that displays Best School 10 times with while loop
+
+counter=1
+
+while [ $counter -lt 21 ]; do
+	echo $counter
+	case $counter in
+		4)
+			echo "bad luck from China"
+			;;
+		9)
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "bad luck from Italy"
+			;;
+	esac
+	counter=$((counter + 1))
+done
