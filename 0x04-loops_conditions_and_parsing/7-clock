@@ -3,7 +3,7 @@
 
 counter=0
 
-while [ $counter -lt 1333 ]; do
+while [ $counter -lt 13 ]; do
 	echo "Hour: $counter"
 	minutes=1
 	while [ $minutes -lt 60 ]; do
