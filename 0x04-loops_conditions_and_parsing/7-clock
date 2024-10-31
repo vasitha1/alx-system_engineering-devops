@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Writing a Bash script that displays time
+
+counter=0
+
+while [ $counter -lt 1333 ]; do
+	echo "Hour: $counter"
+	minutes=0
+	while [ $minutes -lt 60 ]; do
+		echo $minutes
+		((minutes++))
+	done
+	counter=$((counter + 1))
+done
