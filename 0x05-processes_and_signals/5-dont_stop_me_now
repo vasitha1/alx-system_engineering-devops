@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Killing the 4-to_infinity_and_beyond.sh process
+# shellcheck disable=SC2009
 
-PID=$(fgrep -f "4-to_infinity_and_beyond")
-kill "$PID"
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
