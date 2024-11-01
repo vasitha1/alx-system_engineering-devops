@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Prints the proceses that are currently running
+
+OUTPUT=$(ps aux | grep bash)
+echo "$OUTPUT"
