@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Prints the proceses that are currently running
 
-OUTPUT=$(ps aux)
+OUTPUT=$(ps auxf)
 echo "$OUTPUT"
