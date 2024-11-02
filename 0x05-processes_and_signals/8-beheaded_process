@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Creating a program that kills 7-highlander
+
+pkill -f -SIGKILL 7-highlander
