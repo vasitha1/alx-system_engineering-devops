@@ -4,8 +4,8 @@ invincible() {
 	echo "I am invincible!"
 }
 
+trap invincible SIGTERM
 while true; do
 	echo "To infinity and beyond"
 	sleep 2
-	trap invincible SIGTERM
 done
