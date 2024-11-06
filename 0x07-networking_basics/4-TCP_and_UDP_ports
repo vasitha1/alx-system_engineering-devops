@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script displays listening ports that only shows listening
+# sockets and PID and name of the program
+
+ss -tulnp
