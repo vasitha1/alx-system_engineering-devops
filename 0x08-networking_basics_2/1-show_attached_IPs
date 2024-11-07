@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script to display all active IPv4 IPs
+
+ip_adrsses=$(grep -oP 'inet \K[\d.]+' /proc/net/fib_trie | grep -v '127.0.0.1')
+
+for adresss in $ip_adrsses; do
+	echo $adresss
+done
