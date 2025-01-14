@@ -1,6 +1,6 @@
 #!/usr/bin/env bash  
+# Update package list
 
-# Update package list  
 apt-get update -y  
 
 # Install Nginx  
