@@ -1,0 +1,30 @@
+#!/usr/bin/env bash  
+
+# Update package list  
+apt-get update -y  
+
+# Install Nginx  
+apt-get install nginx -y  
+
+# Create a custom HTML page  
+echo "Hello World!" > /var/www/html/index.html  
+
+# Configure Nginx to use the default configuration  
+cat <<EOF > /etc/nginx/sites-available/default  
+server {  
+    listen 80 default_server;  
+    listen [::]:80 default_server;  
+
+    root /var/www/html;  
+    index index.html;  
+
+    server_name _;  
+    
+    location / {  
+        try_files \$uri \$uri/ =404;  
+    }  
+}  
+EOF  
+
+# Restart Nginx without using systemctl  
+nginx -s reload
