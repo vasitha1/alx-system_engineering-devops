@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Runs the whoami command as the passed user.
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <username>"
+  exit 1
+fi
+# Run whoami under the specified user using sudo.
+sudo -u "$1" whoami
