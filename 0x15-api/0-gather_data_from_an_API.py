@@ -19,5 +19,5 @@ def main():
     [print("\t {}".format(c)) for c in completed]
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
