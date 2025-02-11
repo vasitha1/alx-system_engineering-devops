@@ -15,7 +15,7 @@ def main():
     todos = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
     username = user.get("username")
 
-     with open("{}.json".format(user_id), "w") as jsonfile:
+    with open("{}.json".format(user_id), "w") as jsonfile:
         json.dump({user_id: [{
                 "task": t.get("title"),
                 "completed": t.get("completed"),
