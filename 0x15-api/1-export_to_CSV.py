@@ -3,6 +3,7 @@
 This module receives information from an API and displays it
 """
 
+import csv
 import requests
 import sys
 
