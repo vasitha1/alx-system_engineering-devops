@@ -18,7 +18,6 @@ def main():
           len(completed), len(todos)))
     [print("\t {}".format(c)) for c in completed]
 
-
     with open("{}.csv".format(sys.argv[1]), "w", newline="") as csvfile:
 
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
